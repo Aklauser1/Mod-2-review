@@ -1,0 +1,75 @@
+import graphics as g
+
+win = g.GraphWin("gradient bar", 400, 100)
+Rectangle1 = g.Rectangle(g.Point(1,1), g.Point(34, 400))
+#found the rgb color value fill here https://stackoverflow.com/questions/41383849/setting-the-fill-of-a-rectangle-drawn-with-canvas-to-an-rgb-value?rq=1
+rectangleColor = "#%02x%02x%02x" % (255, 0, 0)
+Rectangle1.setFill(rectangleColor)
+Rectangle1.setWidth("0")
+Rectangle1.draw(win)
+
+Rectangle2 = Rectangle1.clone()
+Rectangle2.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 24, 0)
+Rectangle2.setFill(rectangleColor)
+Rectangle2.draw(win)
+
+Rectangle3 = Rectangle2.clone()
+Rectangle3.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 48, 0)
+Rectangle3.setFill(rectangleColor)
+Rectangle3.draw(win)
+
+Rectangle4 = Rectangle3.clone()
+Rectangle4.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 71, 0)
+Rectangle4.setFill(rectangleColor)
+Rectangle4.draw(win)
+
+Rectangle5 = Rectangle4.clone()
+Rectangle5.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 94, 0)
+Rectangle5.setFill(rectangleColor)
+Rectangle5.draw(win)
+
+Rectangle6 = Rectangle5.clone()
+Rectangle6.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 117, 0)
+Rectangle6.setFill(rectangleColor)
+Rectangle6.draw(win)
+
+Rectangle7 = Rectangle6.clone()
+Rectangle7.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 140, 0)
+Rectangle7.setFill(rectangleColor)
+Rectangle7.draw(win)
+
+Rectangle8 = Rectangle7.clone()
+Rectangle8.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 163, 0)
+Rectangle8.setFill(rectangleColor)
+Rectangle8.draw(win)
+
+Rectangle9 = Rectangle8.clone()
+Rectangle9.move(33, 0)
+rectangleColor = "#%02x%02x%02x" % (255, 186, 0)
+Rectangle9.setFill(rectangleColor)
+Rectangle9.draw(win)
+
+Rectangle10 = g.Rectangle(g.Point(298,1), g.Point(332, 400))
+rectangleColor = "#%02x%02x%02x" % (255, 209, 0)
+Rectangle10.setFill(rectangleColor)
+Rectangle10.setWidth("0")
+Rectangle10.draw(win)
+
+Rectangle11 = g.Rectangle(g.Point(332,1), g.Point(366, 400))
+rectangleColor = "#%02x%02x%02x" % (255, 232, 0)
+Rectangle11.setFill(rectangleColor)
+Rectangle11.setWidth("0")
+Rectangle11.draw(win)
+
+Rectangle12 = g.Rectangle(g.Point(366,1), g.Point(400, 400))
+rectangleColor = "#%02x%02x%02x" % (255, 255, 0)
+Rectangle12.setFill(rectangleColor)
+Rectangle12.setWidth("0")
+Rectangle12.draw(win)
